@@ -137,7 +137,6 @@ table {
 /* END RESET */
 body,
 html {
-    scroll-behavior: smooth;
     overflow-x: hidden !important;
 }
 

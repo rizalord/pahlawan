@@ -99,6 +99,7 @@ hbg.addEventListener(waitRespond, function () {
 
 
 // Media Query
+var height = $('nav').css('max-height');
 
 $(window).resize(function () {
 
@@ -112,7 +113,7 @@ $(window).resize(function () {
         $('nav').css('max-height', '60px');
     }
 
-    
+    height = $('nav').css('max-height').replace('px' , '');
 
 });
 
@@ -130,4 +131,19 @@ $(window).scroll(function (event) {
         $('nav').css('position', 'absolute');
         $('nav').css('background', 'transparent');
     }
+});
+
+// page Scroll
+
+$('.page-scroll').on('click' , function(e){
+    var href = $(this).attr('href');
+    var elementHref = $(href);
+    var navHeightq = parseInt(height.replace('px', ''));
+    // pindah scroll
+    $('html,body').animate({
+        scrollTop: elementHref.offset().top - (navHeightq * 2)
+    },700);
+
+    console.log(navHeightq);
+    e.preventDefault();
 });
