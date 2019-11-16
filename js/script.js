@@ -124,11 +124,11 @@ $(window).scroll(function (event) {
     var navHeight = parseInt($('nav').css('max-height').replace('px', ''));
 
     if (scroll >= navHeight) {
-        if ($(window).width() > 812) {
-            $('body').css('padding-top', '80px');
-        }else{
-            $('body').css('padding-top', '60px');
-        }
+        // if ($(window).width() > 812) {
+        //     $('body').css('padding-top', '80px');
+        // }else{
+        //     $('body').css('padding-top', '60px');
+        // }
         console.log($('body').css('padding-top'));
         $('nav').css('top', '0px');    
         $('nav').css('position', 'fixed');
@@ -149,12 +149,12 @@ $('.page-scroll').on('click' , function(e){
     var elementHref = $(href);
     var navHeightq = parseInt(height.replace('px', ''));
     // pindah scroll
-    var targetScroll = elementHref.offset().top - (navHeightq * 1.5);
+    var targetScroll = elementHref.offset().top - (navHeightq * 1);
 
     $('html,body').animate({
         scrollTop: targetScroll
     },700);
 
-    console.log(elementHref.offset());
+    
     
 });

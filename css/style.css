@@ -704,9 +704,10 @@ nav ul li:hover a::after {
     background-repeat: repeat;
     color: rgb(0, 0, 0);
 
-    width: 540px;
+    width: 100%;
     display: block;
     margin : auto;
+    text-align: center;
 }
 
 .content-team {
