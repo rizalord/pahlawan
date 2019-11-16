@@ -613,7 +613,10 @@ nav ul li:hover a::after {
     background-size: auto;
     background-position: left bottom,
         right top;
+    padding: 80px 0 60px;
 }
+
+
 
 .pahlawanSection h1 {
     /* Font & Text */
@@ -641,4 +644,16 @@ nav ul li:hover a::after {
     color: rgb(0, 0, 0);
 
 
+}
+
+@media (max-width : 576px) {
+    .content-pahlawan {
+        background-position: 0px 350px,
+            right top;
+    }
+
+    .pahlawanSection h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
 }
