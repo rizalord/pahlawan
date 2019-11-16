@@ -124,10 +124,18 @@ $(window).scroll(function (event) {
     var navHeight = parseInt($('nav').css('max-height').replace('px', ''));
 
     if (scroll >= navHeight) {
+        if ($(window).width() > 812) {
+            $('body').css('padding-top', '80px');
+        }else{
+            $('body').css('padding-top', '60px');
+        }
+        console.log($('body').css('padding-top'));
+        $('nav').css('top', '0px');    
         $('nav').css('position', 'fixed');
         $('nav').css('background', 'linear-gradient(70deg , #9460FE , #3E8CFE)');
         $('nav').css('box-shadow', '0px 1px 4px 4px rgba(0,0,0,0.2)');
     } else {
+        $('body').css('padding-top', '0px');
         $('nav').css('position', 'absolute');
         $('nav').css('background', 'transparent');
     }
@@ -136,14 +144,17 @@ $(window).scroll(function (event) {
 // page Scroll
 
 $('.page-scroll').on('click' , function(e){
+    e.preventDefault();
     var href = $(this).attr('href');
     var elementHref = $(href);
     var navHeightq = parseInt(height.replace('px', ''));
     // pindah scroll
+    var targetScroll = elementHref.offset().top - (navHeightq * 1.5);
+
     $('html,body').animate({
-        scrollTop: elementHref.offset().top - (navHeightq * 2)
+        scrollTop: targetScroll
     },700);
 
-    console.log(navHeightq);
-    e.preventDefault();
+    console.log(elementHref.offset());
+    
 });
