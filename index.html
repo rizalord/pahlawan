@@ -9,6 +9,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Monda&display=swap" rel="stylesheet">
 </head>
@@ -39,13 +41,16 @@
     <!-- container -->
     <div class="container-first" id="home">
         <div class="left-box w3-container">
-            <h1 class="w3-left w3-animate-bottom">Selamat Hari Pahlawan <br>10 November</h1>
+            <!-- <h1 class="w3-left w3-animate-bottom">Selamat Hari Pahlawan <br>10 November</h1> -->
+            <h1 class="animated fadeInLeft slow">
+                <span>Selamat Hari Pahlawan</span><br> <span>10 November</span>
+            </h1>
         </div>
     </div>
 
     <!-- pahlawan -->
     <section class="pahlawanSection" id="pahlawan">
-        <h1>Pahlawan</h1>
+        <h1 data-aos="fade-up" data-aos-duration="1250" data-aos-easing="ease">Pahlawan</h1>
         <div class="content-pahlawan">
 
         </div>
@@ -53,9 +58,9 @@
 
     <!-- our team -->
     <section class="teamSection" id="team">
-        <h1>Our Team</h1>
+        <h1 data-aos="fade-up" data-aos-duration="1300">Our Team</h1>
         <div class="content-team">
-            <div class="box-team">
+            <div class="box-team" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="550">
                 <div class="team">
                     <div class="border-wrapper">
                         <img src="http://fullstackdesigner.id/assets/images/fsd/instruktur/1.png" alt="Rizal">
@@ -81,7 +86,15 @@
 
     <!-- JAVASCRIPT -->
     <script src="js/jquery-3.4.1.slim.js"></script>
+    <script src="js/vue.js"></script>
+    <!--  michalsnik github animation-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- end michalsnik github animation -->
     <script src="js/script.js"></script>
+    <script src="js/script-with-vue.js"></script>
 </body>
 
 </html>

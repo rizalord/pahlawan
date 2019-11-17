@@ -507,13 +507,16 @@ nav ul li:hover a::after {
     position: relative;
     padding: 10px 70px;
     padding-top: 5px;
+    /* background-color: red; */
+    box-sizing: border-box;
 
 }
 
 .left-box h1 {
-    position: absolute;
+    /* background-color: pink; */
+    /* position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%); */
     font-family: Poppins,
         sans-serif;
     font-size: 55px;
@@ -523,6 +526,9 @@ nav ul li:hover a::after {
     color: solid rgb(0, 0, 0);
     text-align: left;
     word-spacing: 0px;
+    box-sizing: border-box;
+    text-shadow: 0px 5px rgba(0,0,0,0.1);
+    margin-top: 100px;
 }
 
 
@@ -706,7 +712,7 @@ nav ul li:hover a::after {
 
     width: 100%;
     display: block;
-    margin : auto;
+    margin: auto;
     text-align: center;
 }
 
@@ -738,22 +744,24 @@ nav ul li:hover a::after {
 .team {
     width: 50%;
     height: 100%;
-    
+
     float: left;
-    
+
     padding: 10px;
     position: relative;
 }
 
-@media (max-width : 657px){
-    .team{
+@media (max-width : 657px) {
+    .team {
         width: 100%;
         margin-bottom: 20px;
     }
-    .box-team{
+
+    .box-team {
         width: 100%;
     }
 }
+
 .team img {
     margin: auto;
     display: block;
@@ -761,13 +769,13 @@ nav ul li:hover a::after {
     height: 190px;
     border-radius: 50%;
     position: absolute;
-    left : 50%;
-    top : 50%;
-    transform: translate(-50% , -50%);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     /* display: none; */
 }
 
-.border-wrapper{
+.border-wrapper {
     width: 197px;
     height: 197px;
     z-index: 0;
@@ -775,7 +783,7 @@ nav ul li:hover a::after {
     border-radius: 100%;
     position: relative;
     display: block;
-    margin : auto;
+    margin: auto;
     /* background-color: #276AFF; */
     background-image: linear-gradient(125deg, red, rgb(138, 112, 255));
 }
@@ -784,7 +792,7 @@ nav ul li:hover a::after {
     margin-top: 20px;
     width: 100%;
     height: 70px;
-    
+
 }
 
 .text-team h4 {
