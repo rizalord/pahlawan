@@ -489,7 +489,7 @@ nav ul li:hover a::after {
     height: auto;
 
     /* background: linear-gradient(70deg, rgb(236, 238, 255), rgb(137, 147, 255), rgb(66, 81, 250)); */
-    background-image: url('../img/home-bg-2.jpg');
+    background-image: url('../img/home-bg-1.jpg');
     /* background-color: red; */
     background-position-y: -40px;
     background-size: cover;

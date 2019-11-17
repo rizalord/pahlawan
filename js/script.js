@@ -132,7 +132,7 @@ $(window).scroll(function (event) {
         console.log($('body').css('padding-top'));
         $('nav').css('top', '0px');    
         $('nav').css('position', 'fixed');
-        $('nav').css('background', 'linear-gradient(70deg , #9460FE , #3E8CFE)');
+        $('nav').css('background', 'linear-gradient(70deg , #E2296D , #FA433D)');
         $('nav').css('box-shadow', '0px 1px 4px 4px rgba(0,0,0,0.2)');
     } else {
         $('body').css('padding-top', '0px');
