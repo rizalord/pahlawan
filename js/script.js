@@ -1,3 +1,7 @@
+
+// Aos JS
+AOS.init();
+
 // hamburger nav
 let hbg = document.querySelector('.hamburger');
 let l1 = document.querySelector('.hamburger .line:first-of-type');
@@ -158,3 +162,5 @@ $('.page-scroll').on('click' , function(e){
     
     
 });
+
+
