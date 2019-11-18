@@ -692,7 +692,7 @@ nav ul li:hover a::after {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 3px 5px 1px 1px rgba(0, 0, 0, 0.45);
+    box-shadow: 3px 5px 1px 1px rgba(0, 0, 0, 0.15);
 }
 
 .right-side-pahlawan {
@@ -725,7 +725,7 @@ nav ul li:hover a::after {
     float: right;
 }
 .box-pahlawan li:nth-child(even) .left-side-pahlawan img{
-    box-shadow: 3px 5px 1px 1px rgba(0, 0, 0, 0.45);
+    box-shadow: 3px 5px 1px 1px rgba(0, 0, 0, 0.15);
 }
 
 
