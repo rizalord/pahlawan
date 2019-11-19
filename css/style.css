@@ -734,6 +734,7 @@ nav ul li:hover a::after {
     height: 100%;
     float: left;
     padding: 10px;
+    
 }
 
 .right-side-pahlawan h2 {
@@ -837,13 +838,14 @@ nav ul li:hover a::after {
     }
 
     .right-side-pahlawan {
-        padding-left: 1.9%;
-        padding-right: 1.9%;
+        padding-left: 17px;
+        padding-right: 17px;
         /* background-color: red; */
     }
 
     .content-pahlawan {
         padding-left: 0px;
+        padding-right: 0px;
     }
 }
 
@@ -1191,4 +1193,14 @@ footer .side-side {
         padding-bottom: 0px;
         /* background-color: red; */
     }
+}
+
+.page-loader{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background: linear-gradient(70deg, #E2296D, #FA433D);
+    z-index: 2;
 }

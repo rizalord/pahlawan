@@ -151,7 +151,8 @@ $(window).scroll(function (event) {
 
 $('.page-scroll').on('click' , function(e){
     e.preventDefault();
-    var href = $(this).attr('href');
+
+    var href = $(this).children('a').attr('href');
     var elementHref = $(href);
     var navHeightq = parseInt(height.replace('px', ''));
     // pindah scroll
@@ -165,5 +166,7 @@ $('.page-scroll').on('click' , function(e){
     
 });
 
+window.addEventListener('load' , function(){
+    $('.page-loader').fadeOut(800);
+});
 
-rgba(255, 255, 255, 0)
