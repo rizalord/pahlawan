@@ -167,5 +167,10 @@ $('.page-scroll').on('click' , function(e){
 
 window.addEventListener('load' , function(){
     $('.page-loader').fadeOut(800);
+    setTimeout(function(){
+        document.querySelector('.left-box h1').classList.add('animated');
+        document.querySelector('.left-box h1').classList.add('fadeInLeft');
+        document.querySelector('.left-box h1').classList.add('slow');
+    }, 400);
 });
 
