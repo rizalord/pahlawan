@@ -163,7 +163,6 @@ $('.page-scroll').on('click' , function(e){
     },700);
 
     
-    
 });
 
 window.addEventListener('load' , function(){

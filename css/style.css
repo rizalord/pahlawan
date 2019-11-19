@@ -734,7 +734,7 @@ nav ul li:hover a::after {
     height: 100%;
     float: left;
     padding: 10px;
-    
+
 }
 
 .right-side-pahlawan h2 {
@@ -1043,7 +1043,8 @@ nav ul li:hover a::after {
 .break {
     clear: both;
 }
-.break-left{
+
+.break-left {
     clear: left;
 }
 
@@ -1056,7 +1057,7 @@ footer {
     background-image: url('../img/footer-2.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    
+
     padding: 15px 10%;
     padding-top: 300px;
     /* padding-bottom: 50px; */
@@ -1104,20 +1105,23 @@ footer .side-side {
 
 }
 
-.side-side ul li:first-child{
+.side-side ul li:first-child {
     height: auto;
     border-bottom: 0px;
     padding: 0;
-    
+
     padding-bottom: 5px;
     /* background-color: red; */
 }
 
-.side-side ul li:last-child{
-    border-bottom: 2px dotted #E3E6FC;
+.side-side ul li:last-child {
+    border-bottom: 0px dotted #E3E6FC;
 }
 
 .side-side ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
     font-family: "Open Sans",
         sans-serif;
     font-size: 16px;
@@ -1127,7 +1131,7 @@ footer .side-side {
     color: #FFFFFF;
 }
 
-@media (max-width : 1125px){
+@media (max-width : 1125px) {
     footer {
         padding: 15px 5%;
     }
@@ -1140,7 +1144,7 @@ footer .side-side {
         float: left;
         margin: 0px 15px;
     }
-    
+
     .side-side ul li h3 {
         font-family: Poppins,
             sans-serif;
@@ -1164,7 +1168,7 @@ footer .side-side {
     }
 }
 
-@media (max-width : 657px){
+@media (max-width : 657px) {
     footer {
         padding: 15px 30px;
         background-image: url('../img/footer-2.jpg');
@@ -1178,7 +1182,7 @@ footer .side-side {
         display: inline-block;
         height: auto;
         /* background-color: red; */
-        
+
         float: none;
         margin: 0px 0px;
 
@@ -1187,6 +1191,7 @@ footer .side-side {
     .side-side ul li h3 {
         height: auto;
     }
+
     .side-side ul li:first-child {
         margin-top: 40px;
         height: auto;
@@ -1195,7 +1200,7 @@ footer .side-side {
     }
 }
 
-.page-loader{
+.page-loader {
     position: fixed;
     left: 0px;
     right: 0px;
@@ -1203,4 +1208,22 @@ footer .side-side {
     bottom: 0px;
     background: linear-gradient(70deg, #E2296D, #FA433D);
     z-index: 2;
+}
+
+.copyright {
+    margin-top: 80px;
+    font-family: "Open Sans",
+        sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    text-decoration: none solid rgb(227, 230, 252);
+    text-align: left;
+    word-spacing: 0px;
+    color: rgb(227, 230, 252);
+}
+
+@media (max-width : 657px){
+    .copyright{
+        text-align: center;
+    }
 }
