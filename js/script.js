@@ -29,9 +29,9 @@ function closeNavbar() {
 
 
     // hbg.style.border = '1px solid rgba(255,255,255,1)';
-    l1.style.backgroundColor = 'rgba(255,255,255,1)';
-    l2.style.backgroundColor = 'rgba(255,255,255,1)';
-    l3.style.backgroundColor = 'rgba(255,255,255,1)';
+    l1.style.backgroundColor = 'rgba(0,0,0,0.8)';
+    l2.style.backgroundColor = 'rgba(0,0,0,0.8)';
+    l3.style.backgroundColor = 'rgba(0,0,0,0.8)';
     // kh5.style.color = 'white';
     // kh5.style.transition = '2s';
     hbg.style.transition = '0.5s';
@@ -58,7 +58,7 @@ listNav.forEach(function (e) {
 hbg.addEventListener(waitRespond, function () {
     if (wait == true) {
         wait = false;
-        $('nav').css('transition', '0.8s ease');
+        $('nav').css('transition', '0.5s ease');
         if (jumlahClick == 1) {
             l1.style.top = '16px';
             l1.style.transform = 'rotate(45deg)';
@@ -138,10 +138,12 @@ $(window).scroll(function (event) {
         $('nav').css('position', 'fixed');
         $('nav').css('background', 'linear-gradient(70deg , #E2296D , #FA433D)');
         $('nav').css('box-shadow', '0px 1px 4px 4px rgba(0,0,0,0.2)');
+        $('.hamburger .line').css('background-color' , 'white');
     } else {
         $('body').css('padding-top', '0px');
         $('nav').css('position', 'absolute');
         $('nav').css('background', 'transparent');
+        $('.hamburger .line').css('background-color', 'rgba(90,90,90,0.9)');
     }
 });
 
@@ -164,3 +166,4 @@ $('.page-scroll').on('click' , function(e){
 });
 
 
+rgba(255, 255, 255, 0)

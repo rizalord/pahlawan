@@ -145,7 +145,7 @@ body {
     /* height: 100vh; */
     height: auto;
     overflow-x: hidden;
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
 }
 
 
@@ -400,8 +400,8 @@ nav ul li:hover a::after {
     }
 
     nav ul {
-        background: -webkit-gradient(linear, left top, right top, from(#21007E), to(#E31EB6));
-        background: linear-gradient(90deg, #21007E, #E31EB6);
+        /* background: -webkit-gradient(linear, left top, right top, from(#21007E), to(#E31EB6)); */
+        background: linear-gradient(70deg, #E2296D, #FA433D);
         float: none;
         width: 100%;
         height: auto;
@@ -411,11 +411,11 @@ nav ul li:hover a::after {
 
     nav ul li {
         /* background-color: pink; */
-        height: 20px;
+        height: 38px;
         width: 100%;
         line-height: 20px;
         margin-top: 0px;
-        margin: 12px 0px;
+        margin: 15px 0px;
         /* line-height: 120px; */
         font-family: Poppins,
             sans-serif;
@@ -423,11 +423,26 @@ nav ul li:hover a::after {
         margin-left: 0px;
         /* background-color: red; */
         position: relative;
-
+        display: block;
     }
 
     nav ul li a {
         color: rgba(255, 255, 255, 0.9);
+        line-height: 38px;
+    }
+
+    nav ul li:hover a {
+        color: #E52C67;
+    }
+
+    nav ul li:hover a::after {
+        animation: none;
+        color: transparent;
+    }
+
+    nav ul li:hover {
+        border-radius: 30px;
+        background-color: rgba(255, 255, 255, 0.8);
     }
 
 
@@ -451,7 +466,7 @@ nav ul li:hover a::after {
         display: block;
         width: 50%;
         height: 1px;
-        background-color: white;
+        background-color: rgba(90, 90, 90, 0.9);
         margin-top: 7px;
         margin-left: auto;
         margin-right: auto;
@@ -517,10 +532,10 @@ nav ul li:hover a::after {
     /* position: absolute;
     top: 50%;
     transform: translateY(-50%); */
-    font-family: Poppins,
+    font-family: 'Montserrat',
         sans-serif;
     font-size: 55px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 70px;
     text-decoration: none;
     color: solid rgb(0, 0, 0);
@@ -589,10 +604,10 @@ nav ul li:hover a::after {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        font-family: Poppins,
+        font-family: 'Montserrat',
             sans-serif;
         font-size: 40px;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 50px;
         text-decoration: none;
         color: solid rgb(0, 0, 0);
@@ -620,12 +635,14 @@ nav ul li:hover a::after {
     height: 100%;
     height: auto;
     background-image: url('../img/team-bg-left.png'),
+        url('../img/team-bg-right.png'),
+        url('../img/team-bg-left.png'),
         url('../img/team-bg-right.png');
     background-repeat: no-repeat,
-        no-repeat;
+        no-repeat, no-repeat, no-repeat;
     background-size: auto;
     background-position: 0px 0px,
-        right top;
+        right top, left bottom, right bottom;
     padding: 80px 0 60px;
     padding-left: 11%;
     padding-right: 11%;
@@ -635,11 +652,13 @@ nav ul li:hover a::after {
 
 .pahlawanSection h1 {
     /* Font & Text */
-    font-family: Poppins, sans-serif;
+    font-family: 'Montserrat',
+        sans-serif;
     font-size: 50px;
+
     font-style: normal;
     font-variant: normal;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: normal;
     line-height: 60px;
     text-decoration: none solid rgb(0, 0, 0);
@@ -670,7 +689,7 @@ nav ul li:hover a::after {
 .box-pahlawan li {
     width: 100%;
     height: auto;
-    /* background-color: pink; */
+
     margin-bottom: 70px;
 }
 
@@ -692,8 +711,22 @@ nav ul li:hover a::after {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 3px 5px 1px 1px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 3px 5px 1px 1px rgba(0, 0, 0, 0.15); */
+    border-radius: 3%;
 }
+
+.pembungkus-gambar {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 299px;
+    height: 359px;
+    background: linear-gradient(70deg, #E2296D, #FA433D);
+    border-radius: 3%;
+}
+
 
 .right-side-pahlawan {
     width: calc(100% - 400px);
@@ -704,10 +737,10 @@ nav ul li:hover a::after {
 }
 
 .right-side-pahlawan h2 {
-    font-family: Poppins,
+    font-family: 'Montserrat',
         sans-serif;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 34px;
     text-decoration: none solid rgb(0, 0, 0);
     text-align: center;
@@ -715,17 +748,22 @@ nav ul li:hover a::after {
 }
 
 .right-side-pahlawan p {
+    font-family: 'Montserrat',
+        sans-serif;
     text-indent: 30px;
     text-align: justify;
     text-align-last: left;
+    line-height: 25px;
+    font-size: 17.5px;
 }
 
-.box-pahlawan li:nth-child(even) .left-side-pahlawan , 
+.box-pahlawan li:nth-child(even) .left-side-pahlawan,
 .box-pahlawan li:nth-child(even) .right-side-pahlawan {
     float: right;
 }
-.box-pahlawan li:nth-child(even) .left-side-pahlawan img{
-    box-shadow: 3px 5px 1px 1px rgba(0, 0, 0, 0.15);
+
+.box-pahlawan li:nth-child(even) .left-side-pahlawan img {
+    /* box-shadow: 3px 5px 1px 1px rgba(0, 0, 0, 0.15); */
 }
 
 
@@ -745,7 +783,7 @@ nav ul li:hover a::after {
         width: 320px;
     }
 
-    .right-side-pahlawan{
+    .right-side-pahlawan {
         padding: 50px 0px;
     }
 
@@ -757,17 +795,23 @@ nav ul li:hover a::after {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        box-shadow: 3px 5px 1px 1px rgba(0, 0, 0, 0.45);
+        /* box-shadow: 3px 5px 1px 1px rgba(0, 0, 0, 0.45); */
+    }
+
+    .pembungkus-gambar {
+        width: 219px;
+        height: 299px;
     }
 }
 
-@media (max-width : 800px){
-    .left-side-pahlawan{
+@media (max-width : 800px) {
+    .left-side-pahlawan {
         width: 100%;
     }
-    .right-side-pahlawan{
+
+    .right-side-pahlawan {
         width: 100%;
-        padding : 30px;
+        padding: 30px;
     }
 }
 
@@ -791,13 +835,14 @@ nav ul li:hover a::after {
     .left-side-pahlawan {
         height: 300px;
     }
-    .right-side-pahlawan{
+
+    .right-side-pahlawan {
         padding-left: 1.9%;
         padding-right: 1.9%;
         /* background-color: red; */
     }
-    
-    .content-pahlawan{
+
+    .content-pahlawan {
         padding-left: 0px;
     }
 }
@@ -815,19 +860,19 @@ nav ul li:hover a::after {
 .teamSection h1 {
     /* Font & Text */
     margin-bottom: 10px;
-    font-family: Poppins,
+    font-family: 'Montserrat',
         sans-serif;
     font-size: 50px;
     font-style: normal;
     font-variant: normal;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: normal;
     line-height: 60px;
     text-decoration: none solid rgb(0, 0, 0);
     text-align: center;
     text-indent: 0px;
     text-transform: none;
-    
+
     white-space: normal;
     word-spacing: 0px;
 
@@ -843,6 +888,18 @@ nav ul li:hover a::after {
     display: block;
     margin: auto;
     text-align: center;
+}
+
+.teamSection p {
+    font-family: "Open Sans",
+        sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    text-decoration: none solid rgb(80, 91, 109);
+    color: rgb(80, 91, 109);
+    text-align: center;
+    word-spacing: 0px;
+    margin-top: 20px;
 }
 
 .content-team {
@@ -925,10 +982,10 @@ nav ul li:hover a::after {
 }
 
 .text-team h4 {
-    font-family: Poppins,
+    font-family: 'Montserrat',
         sans-serif;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 34px;
     text-decoration: none solid rgb(0, 0, 0);
     text-align: center;
@@ -936,7 +993,7 @@ nav ul li:hover a::after {
 }
 
 .text-team h5 {
-    font-family: "Open Sans",
+    font-family: 'Montserrat',
         sans-serif;
     font-size: 16px;
     line-height: 26px;
@@ -947,7 +1004,191 @@ nav ul li:hover a::after {
     color: rgb(189, 89, 255);
 }
 
+.social-media {
+
+    width: auto;
+    height: 45px;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    position: relative;
+    /* background-color: red; */
+    text-align: center;
+}
+
+.social-media a {
+    transition: 0.4s ease;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    font-size: 23px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 90%;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    background: linear-gradient(125deg, red, rgb(138, 112, 255));
+    color: white;
+    border: 1px solid white;
+}
 
 .break {
     clear: both;
+}
+.break-left{
+    clear: left;
+}
+
+/* footer */
+footer {
+    margin-top: 50px;
+    display: block;
+    width: 100%;
+    height: auto;
+    background-image: url('../img/footer-2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    padding: 15px 10%;
+    padding-top: 300px;
+    /* padding-bottom: 50px; */
+}
+
+footer .side-side {
+    width: 30%;
+    display: inline-block;
+    height: auto;
+    /* background-color: red; */
+    float: left;
+    margin: 0px 15px;
+}
+
+
+.side-side ul {
+    width: 100%;
+    height: auto;
+    /* background-color: pink; */
+}
+
+
+
+.side-side ul li {
+    height: 52.5px;
+    width: 100%;
+    border-bottom: 2px dotted #E3E6FC;
+    padding: 13px 0 13px 0;
+}
+
+.side-side ul li h3 {
+    font-family: Poppins,
+        sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: auto;
+    height: auto;
+    display: block;
+
+    text-decoration: none solid rgb(255, 255, 255);
+    text-align: left;
+    text-transform: uppercase;
+    word-spacing: 0px;
+    color: #ffffff;
+
+}
+
+.side-side ul li:first-child{
+    height: auto;
+    border-bottom: 0px;
+    padding: 0;
+    
+    padding-bottom: 5px;
+    /* background-color: red; */
+}
+
+.side-side ul li:last-child{
+    border-bottom: 2px dotted #E3E6FC;
+}
+
+.side-side ul li a {
+    font-family: "Open Sans",
+        sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none solid rgb(255, 255, 255);
+    word-spacing: 0px;
+    color: #FFFFFF;
+}
+
+@media (max-width : 1125px){
+    footer {
+        padding: 15px 5%;
+    }
+
+    footer .side-side {
+        width: 27%;
+        display: inline-block;
+        height: auto;
+        /* background-color: red; */
+        float: left;
+        margin: 0px 15px;
+    }
+    
+    .side-side ul li h3 {
+        font-family: Poppins,
+            sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30.5px;
+        height: 52.5px;
+        display: block;
+
+        text-decoration: none solid rgb(255, 255, 255);
+        text-align: left;
+        text-transform: uppercase;
+        word-spacing: 0px;
+        color: #ffffff;
+
+    }
+
+    .side-side ul li:first-child {
+        height: auto;
+        padding-bottom: 5px;
+    }
+}
+
+@media (max-width : 657px){
+    footer {
+        padding: 15px 30px;
+        background-image: url('../img/footer-2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    footer .side-side {
+        width: 100%;
+        display: inline-block;
+        height: auto;
+        /* background-color: red; */
+        
+        float: none;
+        margin: 0px 0px;
+
+    }
+
+    .side-side ul li h3 {
+        height: auto;
+    }
+    .side-side ul li:first-child {
+        margin-top: 40px;
+        height: auto;
+        padding-bottom: 0px;
+        /* background-color: red; */
+    }
 }
