@@ -165,12 +165,25 @@ $('.page-scroll').on('click' , function(e){
     
 });
 
+// menunggu semua gambar di load baru tampil halaman
 window.addEventListener('load' , function(){
-    $('.page-loader').fadeOut(800);
-    setTimeout(function(){
-        document.querySelector('.left-box h1').classList.add('animated');
-        document.querySelector('.left-box h1').classList.add('fadeInLeft');
-        document.querySelector('.left-box h1').classList.add('slow');
-    }, 400);
+    
+
+    // (lagi) menuggu gambar team di load baru tampil halaman
+    let imageLoaded = 0;
+    document.querySelectorAll('.border-wrapper img').forEach(function(e){
+        imageLoaded++;
+    });
+
+    
+    if(imageLoaded == 2){
+        $('.page-loader').fadeOut(800);
+        setTimeout(function () {
+            document.querySelector('.left-box h1').classList.add('animated');
+            document.querySelector('.left-box h1').classList.add('fadeInLeft');
+            document.querySelector('.left-box h1').classList.add('slow');
+        }, 400);    
+    }
+
 });
 

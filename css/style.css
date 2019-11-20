@@ -149,7 +149,7 @@ body {
 }
 
 
-/* navbar */
+/* ======================================================== NAVBAR =============================================== */
 
 .hamburger {
     display: none;
@@ -497,7 +497,7 @@ nav ul li:hover a::after {
     }
 }
 
-/* Container */
+/* ======================================= Container / First Panel ============================================= */
 
 .container-first {
     width: 100%;
@@ -621,7 +621,7 @@ nav ul li:hover a::after {
 
 }
 
-/* PAHLAWAN */
+/* ==================================================== PAHLAWAN ================================================= */
 .pahlawanSection {
     padding-top: 15px;
     width: 100%;
@@ -1049,18 +1049,18 @@ nav ul li:hover a::after {
     clear: left;
 }
 
-/* footer */
+/* ================================================== FOOTER ===================================================== */
 footer {
     margin-top: 50px;
     display: block;
     width: 100%;
     height: auto;
-    background-image: url('../img/footer-2.jpg');
+    /* background-color: orange; */
+    background-image: url('../img/footer-4.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-
     padding: 15px 10%;
-    padding-top: 300px;
+    padding-top: 100px;
     /* padding-bottom: 50px; */
 }
 
@@ -1083,17 +1083,18 @@ footer .side-side {
 
 
 .side-side ul li {
+    
     height: 52.5px;
     width: 100%;
-    border-bottom: 2px dotted #E3E6FC;
+    border-bottom: 2px solid rgb(243, 244, 252);
     padding: 13px 0 13px 0;
 }
 
 .side-side ul li h3 {
-    font-family: Poppins,
-        sans-serif;
+    font-family: 'Montserrat',
+    sans-serif;
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: auto;
     height: auto;
     display: block;
@@ -1123,8 +1124,8 @@ footer .side-side {
     display: block;
     width: 100%;
     height: 100%;
-    font-family: "Open Sans",
-        sans-serif;
+    font-family: 'Montserrat',
+    sans-serif;
     font-size: 16px;
     line-height: 24px;
     text-decoration: none solid rgb(255, 255, 255);
@@ -1171,8 +1172,9 @@ footer .side-side {
 
 @media (max-width : 657px) {
     footer {
+
         padding: 15px 30px;
-        background-image: url('../img/footer-2.jpg');
+        padding-top: 75px;
         background-repeat: no-repeat;
         background-size: cover;
         overflow: hidden;
@@ -1212,7 +1214,7 @@ footer .side-side {
 }
 
 .copyright {
-    margin-top: 80px;
+    margin-top: 70px;
     font-family: "Open Sans",
         sans-serif;
     font-size: 16px;
@@ -1226,5 +1228,37 @@ footer .side-side {
 @media (max-width : 657px){
     .copyright{
         text-align: center;
+    }
+}
+
+
+
+/* LOADING SPINNER */
+.loader {
+    
+    border: 4px solid #f3f3f3;
+    /* Light grey */
+    border-top: 4px solid #7db2f7;
+    /* Blue */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+}
+
+.loader-wrap{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }
